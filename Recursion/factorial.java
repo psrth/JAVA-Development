@@ -26,7 +26,7 @@ public class Factorial
     System.out.print("Enter the number: ");
     int i = sc.nextInt();
 
-    int f = fact(input);
+    int f = fact(i);
 
     System.out.println("The factorial of "+i+" is: "+f);
   }
