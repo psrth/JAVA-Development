@@ -11,9 +11,11 @@ public class GCD{
 
     if (n!=0)
       return hcf(n, m%n);
+      // recursive case
 
     else
       return m;
+      // base case
   }
 
   public static void main(String args[]){
