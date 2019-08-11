@@ -1,4 +1,4 @@
-
+package dataStructures.LinkedLists;
 public class LinkedList
 {
   Node head;
@@ -38,7 +38,7 @@ public class LinkedList
   }
 
   //method to show all data held by linked list of nodes
-  public static void show()
+  public void show()
   {
     Node node = head;
     //start the traversing from head node
