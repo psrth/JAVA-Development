@@ -21,7 +21,7 @@ public class LL
     while(true)
     {
       System.out.println();
-      System.out.println("1. See List \n2. Insert Node \n3. Insert Node At Start \n4. Exit Program");
+      System.out.println("1. Show List \n2. Insert Node at End \n3. Insert Node At Start \n4. Insert Node At \n5. Delete Node \n6. Exit Program");
       int menu_input = sc.nextInt();
 
       if(menu_input==1)
@@ -45,8 +45,27 @@ public class LL
 
       else if(menu_input==4)
       {
+        System.out.print("Enter value for node: ");
+        int node_data = sc.nextInt();
+        System.out.print("Enter index for node: ");
+        int node_index = sc.nextInt();
+
+        insertAt(node_index, node_data);
+      }
+
+      else if(menu_input==5)
+      {
+        System.out.print("Enter index to delete node: ");
+        int node_index = sc.nextInt();
+
+        deleteAt(node_index);
+      }
+
+      else if(menu_input==6)
+      {
           return;
-        }
+      }
+
       else
       {
         System.out.println("Option not found.");
