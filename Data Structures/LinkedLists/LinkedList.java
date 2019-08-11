@@ -52,4 +52,13 @@ public class LinkedList
     System.out.print(node.data);
     //print last node
   }
+
+  public void insertAtStart(int data)
+  {
+    Node node = new Node();
+    node.data = data;
+    node.next = head;
+
+    head = node;
+  }
 }

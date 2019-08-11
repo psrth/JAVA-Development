@@ -1,5 +1,3 @@
-
-package dataStructures.LinkedLists;
 import java.util.Scanner;
 
 public class LL
@@ -23,7 +21,7 @@ public class LL
     while(true)
     {
       System.out.println();
-      System.out.println("1. See List \n2. Insert Node \n3. Exit Program");
+      System.out.println("1. See List \n2. Insert Node \n3. Insert Node At Start \n4. Exit Program");
       int menu_input = sc.nextInt();
 
       if(menu_input==1)
@@ -40,9 +38,15 @@ public class LL
 
       else if(menu_input==3)
       {
-        return;
+        System.out.print("Enter value for node: ");
+        int node_input = sc.nextInt();
+        list.insertAtStart(node_input);
       }
 
+      else if(menu_input==4)
+      {
+          return;
+        }
       else
       {
         System.out.println("Option not found.");
