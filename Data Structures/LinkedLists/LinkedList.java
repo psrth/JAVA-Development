@@ -90,18 +90,16 @@ public class LinkedList
 
   public void deleteAt(int index)
   {
-    Node n = new Node();
-    Node n1 = new Node();
-    n1.next = null;
-
     if(index==0)
     {
       head = head.next;
     }
 
+    Node n1 = new Node();
     else
     {
       Node n = head;
+      Node n1 = null;
       for(int i=0; i<index-1;i++)
       {
         n = n.next;
