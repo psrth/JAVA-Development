@@ -46,7 +46,7 @@ public class Queue
                 break;
 
         default: System.out.println("Invalid Choice.");
-        
+
       }
     }
   }
@@ -58,7 +58,7 @@ public class Queue
     System.out.print("Enter size of queue: ");
     cap = sc.nextInt();
 
-    int queue[] = new int[cap];
+    queue = new int[cap];
   }
 
 
