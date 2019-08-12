@@ -4,6 +4,7 @@ public class LinkedList
   Node head;
   //linked list starts with a head node
 
+
   // method to insert a new node with individual parameters
   public void insert (int data)
   {
@@ -37,6 +38,7 @@ public class LinkedList
     }
   }
 
+
   //method to show all data held by linked list of nodes
   public void show()
   {
@@ -53,15 +55,20 @@ public class LinkedList
     //print last node
   }
 
+
+  //method to insert node at start
   public void insertAtStart(int data)
   {
     Node node = new Node();
     node.data = data;
     node.next = head;
 
+    //redefining the head node
     head = node;
   }
 
+
+  //method to insert node at index number
   public void insertAt(int index, int data)
   {
     Node node = new Node();
@@ -88,18 +95,20 @@ public class LinkedList
     }
   }
 
+
+  //method to delete node at particular index
   public void deleteAt(int index)
   {
+    Node n1 = new Node();
+
     if(index==0)
     {
       head = head.next;
     }
-
-    Node n1 = new Node();
     else
     {
       Node n = head;
-      Node n1 = null;
+      n1 = null;
       for(int i=0; i<index-1;i++)
       {
         n = n.next;

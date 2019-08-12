@@ -4,12 +4,15 @@ public class LL
 {
   public static void main(String args[])
   {
+    //creating new scanner and linked list objects
     Scanner sc = new Scanner(System.in);
     LinkedList list = new LinkedList();
 
+    //setting a base number of nodes
     System.out.print("Enter the number of elements in initial linked list: ");
     int lim = sc.nextInt();
 
+    //initializing base number of nodes
     for(int i = 0; i<lim; i++)
     {
       System.out.print("Enter data for node "+(i+1)+": ");
@@ -18,6 +21,7 @@ public class LL
       list.insert(n);
     }
 
+    //menu driven user interface
     while(true)
     {
       System.out.println();
@@ -50,7 +54,7 @@ public class LL
         System.out.print("Enter index for node: ");
         int node_index = sc.nextInt();
 
-        insertAt(node_index, node_data);
+        list.insertAt(node_index, node_data);
       }
 
       else if(menu_input==5)
@@ -58,7 +62,7 @@ public class LL
         System.out.print("Enter index to delete node: ");
         int node_index = sc.nextInt();
 
-        deleteAt(node_index);
+        list.deleteAt(node_index);
       }
 
       else if(menu_input==6)
